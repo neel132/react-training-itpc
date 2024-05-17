@@ -1,5 +1,6 @@
 import React from "react";
 import Table from 'react-bootstrap/Table';
+import PropTypes from 'prop-types';
 
 const CustomTable = (props) => {
   const {headers, data} = props; // Try to keep props name as generic as possible.
@@ -55,4 +56,10 @@ const CustomTable = (props) => {
     </Table>
   )
 }
+
+CustomTable.propTypes = {
+  headers: PropTypes.array.isRequired,
+  data: PropTypes.array.isRequired,
+}
+
 export default CustomTable;
