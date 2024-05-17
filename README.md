@@ -6,6 +6,7 @@
 # Steps to install bootstrap
 First Step -
 ```npm install react-bootstrap bootstrap```
+
 Second Step (inside App.jsx)-
 ```import 'bootstrap/dist/css/bootstrap.min.css';```
 
