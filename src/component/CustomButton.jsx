@@ -1,9 +1,10 @@
+import Button from 'react-bootstrap/Button';
 const CustomButton = (props) => {
   const {label, onClick} = props;
   return (
-    <button onClick={onClick}>
+    <Button variant='primary' onClick={onClick}>
       {label}
-    </button>
+    </Button>
   )
 }
 export default CustomButton;

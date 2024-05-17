@@ -5,12 +5,12 @@ import CustomText from "../../component/CustomText/CustomText"
 const Login = () => {
   const navigate = useNavigate();
   const onClick = () => {
-    navigate('/', { state: { login: true}});
+    navigate('/about', { state: { login: true}});
   };
   return (
     <>
       <CustomText label={"This is a login page"} />
-      <CustomButton label={"Go to home"} onClick={onClick} />
+      <CustomButton label={"Go to About"} onClick={onClick} />
     </>
   )
 }
