@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CustomText from "../../component/CustomText";
+import CustomText from "../../component/CustomText/CustomText";
 import CustomButton from "../../component/CustomButton";
 import { useNavigate } from "react-router-dom";
 const Home = () => {

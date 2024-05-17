@@ -1,5 +1,5 @@
 import {useParams} from 'react-router-dom';
-import CustomText from "../../component/CustomText"
+import CustomText from "../../component/CustomText/CustomText"
 const Product = () => {
   const {productId} = useParams();
   console.log("productId -", productId);

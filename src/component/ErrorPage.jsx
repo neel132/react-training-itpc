@@ -1,4 +1,4 @@
-import CustomText from "./CustomText"
+import CustomText from "./CustomText/CustomText"
 
 const ErrorPage = () => {
   return (

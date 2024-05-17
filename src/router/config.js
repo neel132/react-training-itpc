@@ -5,6 +5,7 @@ import Product from "../pages/Product/Product";
 import ErrorPage from "../component/ErrorPage";
 import Login from "../pages/Login/Login";
 import Auth from "../pages/Auth";
+import StyleExample from "../pages/Style/StyleExamples";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: '/login',
     element: <Login />
+  },
+  {
+    path: '/style',
+    element: <StyleExample />
   },
   {
     path: '/*',

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import CustomButton from "../../component/CustomButton"
-import CustomText from "../../component/CustomText"
+import CustomText from "../../component/CustomText/CustomText"
 
 const Login = () => {
   const navigate = useNavigate();
