@@ -1,6 +1,13 @@
 # Steps to run the project
 ```1. npm install```
+
 ```2. npm start```
+
+# Steps to install bootstrap
+First Step -
+```npm install react-bootstrap bootstrap```
+Second Step (inside App.jsx)-
+```import 'bootstrap/dist/css/bootstrap.min.css';```
 
 # Getting Started with Create React App
 
