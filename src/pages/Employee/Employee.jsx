@@ -31,11 +31,13 @@ const Employee = () => {
       console.log('result -', result);
       if(result && result.id) {
         // setEmployeeData([...employeeData, result]);
-        const data = employeeData.push(result);
+        let data = [...employeeData];
+        data.push(result);
         setEmployeeData(data);
       }
     }
   }
+  console.log("Employee Data -", employeeData);
   return (
     <>
       <Form onSubmit={onSubmit}>
