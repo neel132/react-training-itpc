@@ -9,4 +9,17 @@ const axiosInstance = axios.create({
     }
 });
 
+axiosInstance.interceptors.request.use((config) => {
+    const token = 'jwtToken';
+    if(token) {
+        config.headers['Authorization'] = `Bearer ${token}`;
+    }
+    return config;
+})
+
+axiosInstance.interceptors.response.use((config) => {
+    // perform 
+    return config;
+});
+
 export default axiosInstance;
