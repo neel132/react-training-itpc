@@ -6,6 +6,7 @@ import ErrorPage from "../component/ErrorPage";
 import Login from "../pages/Login/Login";
 import Auth from "../pages/Auth";
 import StyleExample from "../pages/Style/StyleExamples";
+import Employee from "../pages/Employee/Employee";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: '/style',
     element: <StyleExample />
+  },
+  {
+    path: '/employee',
+    element: <Employee />
   },
   {
     path: '/*',
