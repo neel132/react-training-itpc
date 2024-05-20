@@ -3,7 +3,7 @@ import CustomText from "../../component/CustomText/CustomText";
 import CustomButton from "../../component/CustomButton";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { increment } from "../../redux/slices/counterSlice";
+import { decrement, increment, incrementFromUserInput, reset } from "../../redux/slices/counterSlice";
 
 const Home = () => {
   const {counter} = useSelector(state => state.counter);
@@ -17,27 +17,24 @@ const Home = () => {
   const operations = (type) => {
     switch(type) {
       case '+':
-        dispatch(increment());
-        // setCounter(counter + 1);
+        dispatch(incrementFromUserInput(7));
         break;
       case '-':
-        // setCounter(counter - 1);
+        dispatch(decrement());
         break;
       case '*':
-        // setCounter(counter * 1);
         break;
       case '/':
-        // setCounter(counter / 1);
         break;
       default:
-        // setCounter(0);
+        dispatch(reset());
         break;
     }
   }
   return (
     <>
       <CustomText label={`Counter ${counter}`}/>
-      <CustomButton label={`Increment by 1`} onClick={() => operations('+')} />
+      <CustomButton label={`Increment by 7`} onClick={() => operations('+')} />
       <CustomButton label={`Go to About`} onClick={() => goToAbout()} />
     </>
   )
