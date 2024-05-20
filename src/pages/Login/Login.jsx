@@ -12,7 +12,7 @@ const Login = () => {
     console.log("Email -", email);
     console.log("Password -", password);
     if(email.length > 0 && password.length > 0) {
-      navigate('/about', { state: { login: true}});
+      navigate('/home', { state: { login: true}});
     } else {
       alert("Please enter email and password");
     }
@@ -43,7 +43,7 @@ const Login = () => {
     const email = e.target[0].value; // Getting the value of email field
     const password = e.target[1].value; // Getting the value of password field
     if(email.length > 0 && password.length > 0) { // Checking the validity of email and password fields
-      navigate('/about', { state: { login: true}});
+      navigate('/home', { state: { login: true}});
     } else {
       alert("Please enter email and password");
     }

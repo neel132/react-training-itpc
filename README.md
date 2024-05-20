@@ -10,6 +10,18 @@ First Step -
 Second Step (inside App.jsx)-
 ```import 'bootstrap/dist/css/bootstrap.min.css';```
 
+# Redux
+Redux - It is a global state management library
+
+1. Initial state - default state
+2. Reducer - It will hold all actions
+3. Actions - It will update our state
+4. Store - combine reducer from slices and it will serve to your component
+5. slices - It will hold reducer and actions
+
+## Steps to install redux toolkit
+```npm install @reduxjs/toolkit react-redux```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

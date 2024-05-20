@@ -2,8 +2,13 @@ import React, { useEffect, useState } from "react";
 import CustomText from "../../component/CustomText/CustomText";
 import CustomButton from "../../component/CustomButton";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { increment } from "../../redux/slices/counterSlice";
+
 const Home = () => {
-  const [counter, setCounter] = useState(0);
+  const {counter} = useSelector(state => state.counter);
+  const dispatch = useDispatch();
+  console.log("counter =>", counter);
   const navigate = useNavigate();
   const goToAbout = () => {
     console.log("Go to About");
@@ -12,19 +17,20 @@ const Home = () => {
   const operations = (type) => {
     switch(type) {
       case '+':
-        setCounter(counter + 1);
+        dispatch(increment());
+        // setCounter(counter + 1);
         break;
       case '-':
-        setCounter(counter - 1);
+        // setCounter(counter - 1);
         break;
       case '*':
-        setCounter(counter * 1);
+        // setCounter(counter * 1);
         break;
       case '/':
-        setCounter(counter / 1);
+        // setCounter(counter / 1);
         break;
       default:
-        setCounter(0);
+        // setCounter(0);
         break;
     }
   }
